@@ -41,3 +41,13 @@ function getMyGreeting() {
 			return "¡Buenas Noches!"
 	}
 }
+
+// funcion para mostrar la hora
+
+function clock() {
+	let now = new Date().toLocaleTimeString('en-US');
+	let displayClock = document.getElementById("displayclock");
+	displayClock.innerHTML = now
+	setTimeout("clock()", 1000)
+}
+setTimeout(clock(), 1000)
