@@ -1,8 +1,7 @@
-let initial = new Date('2021-12-31 00:').getTime(),
+let initial = new Date('2021-11-30 00:').getTime(),
 final = new Date().getTime(),
 diff = final - initial,
-difference = parseInt(diff/(1000*60*60*24) ),
-finalDate = difference + 31;
+finalDate = parseInt(diff/(1000*60*60*24) );
 document.getElementById("today").innerHTML = `${getMyGreeting()}<br>Hoy es ${finalDate} de Diciembre del 2021`;
 
 
